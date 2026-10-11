@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const siteUrl = "https://peacewayfamilyhospital.com";
+const siteUrl = "https://peaceway-family-hospital.vercel.app";
 const brandImage = "https://i.ibb.co/8DnNhyzN/WA-1791745407700.jpg";
 
 export const metadata: Metadata = {
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     images: [brandImage],
   },
   robots: { index: true, follow: true },
+  verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
   icons: { icon: [{ url: brandImage, type: "image/jpeg" }] },
 };
 
