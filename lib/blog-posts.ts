@@ -32,6 +32,7 @@ export const blogPosts: BlogPost[] = [
     "disclaimer": "This article is general health education, not a diagnosis or treatment plan. A qualified clinician should review health content before it is treated as official hospital guidance."
   },
   {
+    "status": "draft",
     "slug": "know-your-blood-pressure",
     "title": "Know Your Blood Pressure: Why Regular Checks Matter",
     "description": "Learn what blood pressure checks can tell you, why high blood pressure may have no obvious symptoms, and how to discuss results with a health professional.",
@@ -61,6 +62,7 @@ export const blogPosts: BlogPost[] = [
     "disclaimer": "This article is educational and cannot interpret your personal readings. Ask a qualified healthcare professional for advice specific to you."
   },
   {
+    "status": "draft",
     "slug": "protecting-your-eyes-everyday",
     "title": "Everyday Eye Care: Habits That Help Protect Your Vision",
     "description": "Practical eye-health guidance on routine eye checks, screen comfort, protective eyewear and symptoms that need prompt professional attention.",
