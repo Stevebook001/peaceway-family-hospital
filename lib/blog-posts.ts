@@ -1,7 +1,8 @@
-export type BlogPost = { slug: string; title: string; description: string; date: string; category: string; image: string; alt: string; intro: string; sections: [string, string][]; disclaimer: string };
+export type BlogPost = { status: "draft" | "published"; slug: string; title: string; description: string; date: string; category: string; image: string; alt: string; intro: string; sections: [string, string][]; disclaimer: string };
 
 export const blogPosts: BlogPost[] = [
   {
+    "status": "draft",
     "slug": "understanding-mental-wellbeing",
     "title": "Understanding Mental Wellbeing: Small Steps That Can Help",
     "description": "A compassionate guide to mental wellbeing, everyday stress, when to seek professional support, and how families can talk about mental health.",
