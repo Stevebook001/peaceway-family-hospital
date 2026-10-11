@@ -20,7 +20,7 @@ export default function Home() {
           <span className="brand-copy"><strong>PEACEWAY</strong><small>FAMILY HOSPITAL</small></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#about">About</a><a href="#services">Healthcare</a><a href="/blog">Health library</a><a href="#contact">Contact</a>
+          <a href="/about">About</a><a href="/services">Healthcare</a><a href="/blog">Health library</a><a href="#contact">Contact</a>
         </nav>
         <a className="button button-small" href={phoneLink}>Call the hospital <span aria-hidden="true">↗</span></a>
       </header>
@@ -56,7 +56,7 @@ export default function Home() {
       <section className="services-section" id="services">
         <div className="section-wrap">
           <div className="services-heading"><div><div className="section-label"><span>02</span> HEALTHCARE & SUPPORT</div><h2>Here for the things<br />that <span>matter most.</span></h2></div><p>Every patient's needs are different. Contact the hospital to confirm service availability, opening hours and the best next step for your care.</p></div>
-          <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}><div className="service-top"><span>{service.number}</span><span className="service-arrow">↗</span></div><div className="service-symbol">{service.number === "01" ? "✚" : service.number === "02" ? "⌁" : service.number === "03" ? "✳" : "◎"}</div><h3>{service.title}</h3><p>{service.text}</p><a href="#contact" aria-label={`Ask about ${service.title}`}>Ask our team <span aria-hidden="true">↗</span></a></article>)}</div>
+          <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}><div className="service-top"><span>{service.number}</span><span className="service-arrow">↗</span></div><div className="service-symbol">{service.number === "01" ? "✚" : service.number === "02" ? "⌁" : service.number === "03" ? "✳" : "◎"}</div><h3>{service.title}</h3><p>{service.text}</p><a href="/services" aria-label={`Ask about ${service.title}`}>Learn more <span aria-hidden="true">↗</span></a></article>)}</div>
         </div>
       </section>
 
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="contact-card"><div className="contact-card-head"><img src={logoUrl} alt="" /><div><strong>Peaceway Family Hospital</strong><small>Official contact information</small></div></div><div className="contact-row"><span>PHONE</span><a href={phoneLink}>{phone}</a></div><div className="contact-row"><span>ADDRESS</span><p>{address}</p></div><a className="button contact-button" href="https://www.google.com/maps/search/?api=1&query=Peaceway+Family+Hospital+Kofero+Bus+Stop+Soka+Ibadan" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a><p className="contact-note">Please confirm service availability and hours by phone before travelling.</p></div>
       </section>
 
-      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#home"><img className="brand-mark" src={logoUrl} alt="" /><span className="brand-copy"><strong>PEACEWAY</strong><small>FAMILY HOSPITAL</small></span></a><p>Compassionate care. Healthier families.<br />Soka, Ibadan, Oyo State, Nigeria.</p><div className="footer-links"><a href="#about">About</a><a href="#services">Healthcare</a><a href="/blog">Health library</a><a href="#contact">Contact</a><a href="https://www.instagram.com/p/DeNCp8_t7Hh/?stkn=MWxyN3JpanRiNHJxOQ==" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://github.com/Stevebook001/peaceway-family-hospital" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Peaceway Family Hospital. All rights reserved.</span><span>Medical information on this website is educational and does not replace care from a qualified clinician.</span></div></footer>
+      <footer className="site-footer"><div className="footer-main"><a className="brand footer-brand" href="#home"><img className="brand-mark" src={logoUrl} alt="" /><span className="brand-copy"><strong>PEACEWAY</strong><small>FAMILY HOSPITAL</small></span></a><p>Compassionate care. Healthier families.<br />Soka, Ibadan, Oyo State, Nigeria.</p><div className="footer-links"><a href="/about">About</a><a href="/services">Healthcare</a><a href="/blog">Health library</a><a href="/editorial-policy">Editorial policy</a><a href="/privacy">Privacy</a><a href="#contact">Contact</a><a href="https://www.instagram.com/p/DeNCp8_t7Hh/?stkn=MWxyN3JpanRiNHJxOQ==" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://github.com/Stevebook001/peaceway-family-hospital" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Peaceway Family Hospital. All rights reserved.</span><span>Medical information on this website is educational and does not replace care from a qualified clinician.</span></div></footer>
     </main>
   );
 }
