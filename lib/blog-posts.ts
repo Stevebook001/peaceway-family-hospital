@@ -91,6 +91,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "disclaimer": "This is general information and does not replace an eye examination or personalised advice from a qualified professional."
   }
+  ,
   {
     "status": "published",
     "slug": "making-healthcare-websites-easier-to-use",
