@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: [brandImage],
   },
   robots: { index: true, follow: true },
-  verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
+  verification: { google: "gcIuNfHshpZd1RlDKs9TSKnSs0U-KpPkrJOZrs1FaOc" },
   icons: { icon: [{ url: brandImage, type: "image/jpeg" }] },
 };
 
